@@ -14,5 +14,9 @@ def faq():
 def secret():
     return render_template("secret.html")
 
+@app.route('/support')
+def support():
+    return render_template("support.html")
+
 if __name__ == "__main__":
     app.run()
