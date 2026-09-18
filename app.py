@@ -10,5 +10,9 @@ def index():
 def faq():
     return render_template("faq.html")
 
+@app.route('/secret')
+def secret():
+    return render_template("secret.html")
+
 if __name__ == "__main__":
     app.run()
